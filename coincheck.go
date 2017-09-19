@@ -4,7 +4,6 @@ import (
 	"crypto/hmac"
 	"crypto/sha256"
 	"encoding/hex"
-	"fmt"
 	"io/ioutil"
 	"net/http"
 	"strconv"
@@ -74,7 +73,6 @@ func (c CoinCheck) Request(method string, path string, param string) string {
 	}
 	defer res.Body.Close()
 	body, _ := ioutil.ReadAll(res.Body)
-	fmt.Println(string(body))
 
 	return string(body)
 }
