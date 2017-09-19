@@ -1,0 +1,2 @@
+# coincheckgo
+coincheck golang API
